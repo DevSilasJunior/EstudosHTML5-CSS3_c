@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas personalisadas</title>
+    <style>
+        h1{
+            border: 30px solid transparent;
+            padding: 10px;
+
+            /*
+            border-image-source: url("mundo.jpg");
+            border-image-slice: 20;
+            border-image-repeat: repeat;
+            */
+           border-image: url("mundo.jpg") 20 repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>OLha essa borda</h1>
+</body>
+</html>
