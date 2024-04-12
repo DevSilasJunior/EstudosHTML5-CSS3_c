@@ -6,16 +6,23 @@
     <title>Document</title>
     <style> 
         body{
-            height: 100vh;
+            /*height: 100vh;
             background-color: black;
             background-image: url('./img/wallpaper002.jpg');
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover; 
+
+            Shorthand - background
+            color > > image > position > repeat > [size](ainda não funciona) > attachment
+            */
+
+            background: black url('./img/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border:  2px solid darkblue;
