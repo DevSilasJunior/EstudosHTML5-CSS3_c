@@ -52,15 +52,29 @@ section.branco{
     background-color: white;
 
 }
+section.branco > p{
+    padding: 10px;
+}
+section#img01{
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+}
 section.img{
-    background-color: rgb(73, 73, 73);
+    background-color: rgba(73, 73, 73, 0.034);
     color: white;
+    box-shadow: inset 2px 2px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.img > p{
     display: inline-block;
-    background-color: black;
-    padding: 30px;
-    
+    background-color: rgba(54, 54, 54, 0.534);
+    padding: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.692);
+}
+section#img02{
+    background-image: url("../imagens/background002.jpg");
+    background-position: center center;
 }
 footer{
     background-color: black;
