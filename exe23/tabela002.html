@@ -10,8 +10,14 @@
 
         }
         table{
-            width: 300px;
+            width: 400px;
             border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(255, 222, 178, 0.87);
         }
         td, th{
             border: 1px solid black;
@@ -23,6 +29,12 @@
         }
         td.num{
             text-align: right;
+        }
+        tbody tr:nth-child(odd){   /* ou 2n-1*/
+            background-color: rgb(141, 139, 135);
+        }
+        tbody > tr:nth-child(even){  /* ou 2n*/
+            background-color: rgb(247, 238, 238);
         }
   </style>
 </head>
@@ -41,12 +53,11 @@
     -->
     <table>
         <caption>População das Unidades Federativas
-            
         </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>população</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 120px;">população</th>
             </tr>
         </thead>
         <tbody>
@@ -162,8 +173,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td>203 062 512</td>
+                <th scope="row">Total de habitantes</th>
+                <td style="text-align: right;">203 062 512</td>
             </tr>
         </tfoot>
     </table>
